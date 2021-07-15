@@ -4,7 +4,8 @@
 ### How to use the Ozeki.Libs.Rest library
 
 In order to send sms messages using scala, you have to import the contents of the **Ozeki.Libs.Rest** library into your project (you also have to include the library in your project).
-If you only need the **Ozeki.Libs.Rest** library, you can simply copy that from the _/src/main/scala_ directory, and place it into your project.
+
+In the case if you only need the **Ozeki.Libs.Rest** library, you can simply copy that from the _/Ozeki.Libs.Rest_ directory, and place it into your project.
 
 ```scala
 import Ozeki.Libs.Rest.{ Configuration, Message, MessageApi }
