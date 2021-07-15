@@ -1,7 +1,7 @@
 # Scala send SMS with Ozeki SMS Gateway
 
 
-## How to use the Ozeki.Libs.Rest library
+### How to use the Ozeki.Libs.Rest library
 
 In order to send sms messages using scala, you have to import the contents of the Ozeki.Libs.Rest library into your project (you also have to include the library in your project).
 
