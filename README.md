@@ -3,14 +3,14 @@
 
 ### How to use the Ozeki.Libs.Rest library
 
-In order to send sms messages using scala, you have to import the contents of the Ozeki.Libs.Rest library into your project (you also have to include the library in your project).
-If you only need the Ozeki.Libs.Rest library, you can simply copy that from the _/src/main/scala_ directory, and place it into your project.
+In order to send sms messages using scala, you have to import the contents of the **Ozeki.Libs.Rest** library into your project (you also have to include the library in your project).
+If you only need the **Ozeki.Libs.Rest** library, you can simply copy that from the _/src/main/scala_ directory, and place it into your project.
 
 ```scala
 import Ozeki.Libs.Rest.{ Configuration, Message, MessageApi }
 ```
 
-To send an SMS message, first of all you need to create a configuration.
+To send an SMS message, first of all you need to create a **Configuration** instance.
 
 ```scala
 val configuration = Configuration(
@@ -20,7 +20,7 @@ val configuration = Configuration(
 )
 ```
 
-To create a message, you will use the Message class of the Ozeki.Libs.Rest library:
+To create a message, you will use the Message class of the **Ozeki.Libs.Rest** library:
 
 ```scala
 val msg = Message(
@@ -29,19 +29,19 @@ val msg = Message(
 )
 ```
 
-To send your previously created SMS message you need to create a MessageApi instance:
+To send your previously created SMS message you need to create a **MessageApi** instance:
 
 ```scala
 val api = MessageApi(configuration)
 ```
 
-After these setps, you can sedn your SMS by calling the Send() method of the MessageApi class:
+After these setps, you can sedn your SMS by calling the Send() method of the **MessageApi** class:
 
 ```scala
 val result = api.Send(msg)
 ```
 
-This method will return with a MessageSendResult object, which we can save and print to the console.
+This method will return with a **MessageSendResult** object, which we can save and print to the console.
 
 ```scala
 println(result)
