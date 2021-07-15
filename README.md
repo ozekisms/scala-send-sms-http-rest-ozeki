@@ -20,7 +20,7 @@ val configuration = Configuration(
 )
 ```
 
-To create a message, you will use the Message class of the **Ozeki.Libs.Rest** library:
+To create a message, you will use the **Message** class of the **Ozeki.Libs.Rest** library:
 
 ```scala
 val msg = Message(
@@ -35,7 +35,7 @@ To send your previously created SMS message you need to create a **MessageApi** 
 val api = MessageApi(configuration)
 ```
 
-After these setps, you can sedn your SMS by calling the Send() method of the **MessageApi** class:
+After these setps, you can sedn your SMS by calling the _Send()_ method of the **MessageApi** class:
 
 ```scala
 val result = api.Send(msg)
